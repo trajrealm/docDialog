@@ -9,7 +9,7 @@ import time
 
 
 # Load and process PDFs
-docs = load_and_split_pdfs(["data/ExtractAlpha_IRP_Sentiment_Signal_white_paper.pdf", "data/ExtractAlpha_IRP_Sentiment_Signal_Fact_sheet.pdf", "data/ExtractAlpha_IRP_Sentiment_Signal_users_guide.pdf"])
+docs = load_and_split_pdfs("data")
 vectorstore = create_vector_store(docs)
 # qa_chain = build_qa_chain(vectorstore)
 
